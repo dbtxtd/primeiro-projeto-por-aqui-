@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-lightgray: hsl(212, 45%, 89%);
+    --clr-grayishblue: hsl(220, 15%, 45%);
+    --clr-darkblue: hsl(218, 44%, 22%);
+
+    --ff-outfit: 'Outfit', sans-serif;
+}
+
+/* Reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+picture,
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1;
+    display: grid;
+    place-content: center;
+    gap: 1rem;
+    background-color: var(--clr-lightgray);
+    padding: 1.75rem;
+}
+
+/* Mobile & Desktop */
+.qrcode {
+    background-color: var(--clr-white);
+    padding: 1rem;
+    border-radius: 1rem;
+    max-width: 20rem;
+}
+
+.qrcode_img {
+    border-radius: 0.5rem;
+}
+
+.qrcode_text {
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-family: var(--ff-outfit);
+    line-height: 1.25;
+}
+
+.qrcode_title {
+    font-size: 1.4rem;
+    color: var(--clr-darkblue);
+}
+
+.qrcode_description {
+    font-size: 0.96rem;
+    color: var(--clr-grayishblue);
+}
+
+/* Footer */
+.attribution {
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+    font-weight: bold;
+}
+
+@media screen and (min-height: 35rem) {
+    .attribution {
+        position: fixed;
+        bottom: 0.5rem;
+        justify-self: center;
+    }
+}
